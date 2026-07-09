@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+        <remote name="rise-gitlab" fetch="https://gitlab.com/riseproject" />
+
+        <include name="common.xml" />
+
+        <!-- Replace common.xml defaults with the current RISC-V working repos -->
+        <remove-project path="linux"         name="linaro-swg/linux.git" />
+
+        <project path="build"                name="OP-TEE/build.git">
+                <linkfile src="qemu_riscv64.mk" dest="build/Makefile" />
+        </project>
+
+        <project path="linux"                name="riscv-optee/linux.git"           remote="rise-gitlab"        revision="refs/tags/optee-ci-20260817" clone-depth="1" />
+
+        <!-- RISC-V QEMU platform dependencies -->
+        <project path="opensbi"              name="riscv-optee/opensbi.git"         remote="rise-gitlab"        revision="refs/tags/optee-ci-20260817" clone-depth="1" />
+        <project path="qemu"                 name="qemu/qemu.git"                   revision="refs/tags/v10.0.0" clone-depth="1" />
+        <project path="u-boot"               name="riscv-optee/u-boot.git"          remote="rise-gitlab"        revision="refs/tags/optee-ci-20260817" clone-depth="1" />
+</manifest>
