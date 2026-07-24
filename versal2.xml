@@ -11,4 +11,7 @@
 	<project path="arm-trusted-firmware"	name="Xilinx/arm-trusted-firmware.git"	revision="xlnx_rebase_v2.14" />
 	<project path="u-boot-xlnx"		name="Xilinx/u-boot-xlnx.git"	revision="xlnx_rebase_v2026.01" />
 	<project path="linux-xlnx"		name="Xilinx/linux-xlnx.git"	revision="xlnx_rebase_v6.18_LTS" />
+	<project path="qemu"                    name="Xilinx/qemu.git"                  revision="master" />
+	<project path="qemu-devicetrees"        name="Xilinx/qemu-devicetrees.git"  revision="master" />
+	<project path="bootgen"                 name="Xilinx/bootgen.git"               revision="xlnx_rel_v2026.1" />
 </manifest>
