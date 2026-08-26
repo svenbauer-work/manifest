@@ -14,4 +14,5 @@
 	<project path="qemu"			name="Xilinx/qemu.git"		revision="master" />
 	<project path="qemu-devicetrees"	name="Xilinx/qemu-devicetrees.git"	revision="master" />
 	<project path="bootgen"			name="Xilinx/bootgen.git"	revision="xlnx_rel_v2026.1" />
+	<project path="scmi-server"		name="Xilinx/scmi-server.git"	revision="main" />
 </manifest>
